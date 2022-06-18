@@ -35,9 +35,7 @@
             this.menuItemCadastrosItensContrato = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemContratos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemReceita = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBoxLogotipo = new System.Windows.Forms.PictureBox();
             this.menuBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogotipo)).BeginInit();
             this.SuspendLayout();
             // 
             // menuBar
@@ -73,21 +71,22 @@
             // 
             this.menuItemCadastrosBrinquedos.Name = "menuItemCadastrosBrinquedos";
             this.menuItemCadastrosBrinquedos.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosBrinquedos.Size = new System.Drawing.Size(183, 25);
+            this.menuItemCadastrosBrinquedos.Size = new System.Drawing.Size(190, 25);
             this.menuItemCadastrosBrinquedos.Text = "Brinquedos";
+            this.menuItemCadastrosBrinquedos.Click += new System.EventHandler(this.menuItemCadastrosBrinquedos_Click);
             // 
             // menuItemCadastrosClientes
             // 
             this.menuItemCadastrosClientes.Name = "menuItemCadastrosClientes";
             this.menuItemCadastrosClientes.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosClientes.Size = new System.Drawing.Size(183, 25);
+            this.menuItemCadastrosClientes.Size = new System.Drawing.Size(190, 25);
             this.menuItemCadastrosClientes.Text = "Clientes";
             // 
             // menuItemCadastrosItensContrato
             // 
             this.menuItemCadastrosItensContrato.Name = "menuItemCadastrosItensContrato";
             this.menuItemCadastrosItensContrato.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosItensContrato.Size = new System.Drawing.Size(183, 25);
+            this.menuItemCadastrosItensContrato.Size = new System.Drawing.Size(190, 25);
             this.menuItemCadastrosItensContrato.Text = "Itens do Contrato";
             // 
             // menuItemContratos
@@ -106,34 +105,22 @@
             this.menuItemReceita.Text = "Receita";
             this.menuItemReceita.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // pictureBoxLogotipo
-            // 
-            this.pictureBoxLogotipo.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.pictureBoxLogotipo.Location = new System.Drawing.Point(424, 234);
-            this.pictureBoxLogotipo.MaximumSize = new System.Drawing.Size(300, 300);
-            this.pictureBoxLogotipo.MinimumSize = new System.Drawing.Size(300, 300);
-            this.pictureBoxLogotipo.Name = "pictureBoxLogotipo";
-            this.pictureBoxLogotipo.Size = new System.Drawing.Size(300, 300);
-            this.pictureBoxLogotipo.TabIndex = 1;
-            this.pictureBoxLogotipo.TabStop = false;
-            // 
             // PrincipalUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.pictureBoxLogotipo);
             this.Controls.Add(this.menuBar);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuBar;
+            this.MaximumSize = new System.Drawing.Size(1024, 768);
+            this.MinimumSize = new System.Drawing.Size(1024, 726);
             this.Name = "PrincipalUI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aluguel de Brinquedos";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuBar.ResumeLayout(false);
             this.menuBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogotipo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -147,6 +134,5 @@
         private ToolStripMenuItem menuItemCadastrosItensContrato;
         private ToolStripMenuItem menuItemContratos;
         private ToolStripMenuItem menuItemReceita;
-        private PictureBox pictureBoxLogotipo;
     }
 }

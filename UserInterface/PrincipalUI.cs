@@ -5,17 +5,28 @@ namespace aluguel_brinquedos.UserInterface
     public partial class PrincipalUI : Form
     {
 
+        private BrinquedosUI brinquedosUI;
+
         public PrincipalUI()
         {
             this.InitializeComponent();
-
-            //Centralizar a PictureBox do logotipo
-            int height = ((this.Size.Height / 2) - this.pictureBoxLogotipo.Height) + 124;
-            int width = (this.Size.Width - this.pictureBoxLogotipo.Width) / 2;
-
-            this.pictureBoxLogotipo.Location = new Point(width, height);
         }
 
+        private void menuItemCadastrosBrinquedos_Click(object sender, EventArgs e)
+        {
+            if(this.brinquedosUI == null)
+            {
+                this.brinquedosUI = new BrinquedosUI();
+                this.brinquedosUI.Show();
+            }
+            else
+            {
+                this.brinquedosUI.BringToFront();
+            }
+
+            this.brinquedosUI.Location = new Point(this.Location.X + 150, this.Location.Y + 50);
+
+        }
     }
 
 }
