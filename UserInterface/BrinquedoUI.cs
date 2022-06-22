@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace aluguel_brinquedos.UserInterface
 {
-    public partial class BrinquedosUI : Form
+    public partial class BrinquedoUI : Form
     {
-        public BrinquedosUI()
+        public BrinquedoUI()
         {
             InitializeComponent();
         }

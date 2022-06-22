@@ -4,29 +4,48 @@ namespace aluguel_brinquedos.UserInterface
 
     public partial class PrincipalUI : Form
     {
-
-        private BrinquedosUI brinquedosUI;
+        
+        //Atrb
+        private BrinquedoUI brinquedoUI;
+        private ClienteUI clienteUI;
 
         public PrincipalUI()
         {
             this.InitializeComponent();
         }
 
-        private void menuItemCadastrosBrinquedos_Click(object sender, EventArgs e)
+        private void menuItemCadastrosBrinquedo_Click(object sender, EventArgs e)
         {
-            if(this.brinquedosUI == null)
+            if(this.brinquedoUI == null)
             {
-                this.brinquedosUI = new BrinquedosUI();
-                this.brinquedosUI.Show();
+                this.brinquedoUI = new BrinquedoUI();
+                this.brinquedoUI.Show();
             }
             else
             {
-                this.brinquedosUI.BringToFront();
+                this.brinquedoUI.BringToFront();
             }
 
-            this.brinquedosUI.Location = new Point(this.Location.X + 150, this.Location.Y + 50);
+            this.brinquedoUI.Location = new Point(this.Location.X + 150, this.Location.Y + 50);
 
         }
+
+        private void menuItemCadastrosCliente_Click(object sender, EventArgs e)
+        {
+            if (this.clienteUI == null)
+            {
+                this.clienteUI = new ClienteUI();
+                this.clienteUI.Show();
+            }
+            else
+            {
+                this.clienteUI.BringToFront();
+            }
+
+            this.clienteUI.Location = new Point(this.Location.X + 150, this.Location.Y + 50);
+
+        }
+
     }
 
 }

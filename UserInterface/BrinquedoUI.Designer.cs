@@ -1,6 +1,6 @@
 ﻿namespace aluguel_brinquedos.UserInterface
 {
-    partial class BrinquedosUI
+    partial class BrinquedoUI
     {
         /// <summary>
         /// Required designer variable.
@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxBrinquedos = new System.Windows.Forms.GroupBox();
             this.dataGridViewBrinquedos = new System.Windows.Forms.DataGridView();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxDadosBrinquedo = new System.Windows.Forms.GroupBox();
             this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonSalvar = new System.Windows.Forms.Button();
             this.buttonExcluir = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
             this.buttonNovo = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxQuantidade = new System.Windows.Forms.TextBox();
             this.labelQuantidade = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNome = new System.Windows.Forms.TextBox();
             this.labelNome = new System.Windows.Forms.Label();
             this.textBoxID = new System.Windows.Forms.TextBox();
             this.labelID = new System.Windows.Forms.Label();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxBrinquedos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrinquedos)).BeginInit();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxDadosBrinquedo.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // groupBoxBrinquedos
             // 
-            this.groupBox1.Controls.Add(this.dataGridViewBrinquedos);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.Location = new System.Drawing.Point(15, 140);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(755, 410);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "  Brinquedos  ";
+            this.groupBoxBrinquedos.Controls.Add(this.dataGridViewBrinquedos);
+            this.groupBoxBrinquedos.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBoxBrinquedos.Location = new System.Drawing.Point(15, 140);
+            this.groupBoxBrinquedos.Name = "groupBoxBrinquedos";
+            this.groupBoxBrinquedos.Size = new System.Drawing.Size(755, 410);
+            this.groupBoxBrinquedos.TabIndex = 0;
+            this.groupBoxBrinquedos.TabStop = false;
+            this.groupBoxBrinquedos.Text = "  Brinquedos  ";
             // 
             // dataGridViewBrinquedos
             // 
@@ -67,26 +67,26 @@
             this.dataGridViewBrinquedos.Size = new System.Drawing.Size(725, 370);
             this.dataGridViewBrinquedos.TabIndex = 0;
             // 
-            // groupBox2
+            // groupBoxDadosBrinquedo
             // 
-            this.groupBox2.Controls.Add(this.buttonCancelar);
-            this.groupBox2.Controls.Add(this.buttonSalvar);
-            this.groupBox2.Controls.Add(this.buttonExcluir);
-            this.groupBox2.Controls.Add(this.buttonEditar);
-            this.groupBox2.Controls.Add(this.buttonNovo);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.labelQuantidade);
-            this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.labelNome);
-            this.groupBox2.Controls.Add(this.textBoxID);
-            this.groupBox2.Controls.Add(this.labelID);
-            this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.Location = new System.Drawing.Point(15, 10);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(755, 125);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "  Dados do Brinquedo  ";
+            this.groupBoxDadosBrinquedo.Controls.Add(this.buttonCancelar);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.buttonSalvar);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.buttonExcluir);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.buttonEditar);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.buttonNovo);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.textBoxQuantidade);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.labelQuantidade);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.textBoxNome);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.labelNome);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.textBoxID);
+            this.groupBoxDadosBrinquedo.Controls.Add(this.labelID);
+            this.groupBoxDadosBrinquedo.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBoxDadosBrinquedo.Location = new System.Drawing.Point(15, 10);
+            this.groupBoxDadosBrinquedo.Name = "groupBoxDadosBrinquedo";
+            this.groupBoxDadosBrinquedo.Size = new System.Drawing.Size(755, 125);
+            this.groupBoxDadosBrinquedo.TabIndex = 1;
+            this.groupBoxDadosBrinquedo.TabStop = false;
+            this.groupBoxDadosBrinquedo.Text = "  Dados do Brinquedo  ";
             // 
             // buttonCancelar
             // 
@@ -151,15 +151,15 @@
             this.buttonNovo.Text = "Novo";
             this.buttonNovo.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // textBoxQuantidade
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(560, 22);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(50, 22);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.Text = "0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxQuantidade.Enabled = false;
+            this.textBoxQuantidade.Location = new System.Drawing.Point(560, 22);
+            this.textBoxQuantidade.Name = "textBoxQuantidade";
+            this.textBoxQuantidade.Size = new System.Drawing.Size(50, 22);
+            this.textBoxQuantidade.TabIndex = 5;
+            this.textBoxQuantidade.Text = "0";
+            this.textBoxQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // labelQuantidade
             // 
@@ -170,14 +170,14 @@
             this.labelQuantidade.TabIndex = 4;
             this.labelQuantidade.Text = "Quantidade:";
             // 
-            // textBox1
+            // textBoxNome
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(200, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 22);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "Nome do brinquedo...";
+            this.textBoxNome.Enabled = false;
+            this.textBoxNome.Location = new System.Drawing.Point(200, 22);
+            this.textBoxNome.Name = "textBoxNome";
+            this.textBoxNome.Size = new System.Drawing.Size(250, 22);
+            this.textBoxNome.TabIndex = 3;
+            this.textBoxNome.Text = "Nome do brinquedo...";
             // 
             // labelNome
             // 
@@ -212,8 +212,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(784, 561);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupBoxDadosBrinquedo);
+            this.Controls.Add(this.groupBoxBrinquedos);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -224,26 +224,26 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Cadastro de Brinquedos - Aluguel de Brinquedos";
-            this.groupBox1.ResumeLayout(false);
+            this.groupBoxBrinquedos.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBrinquedos)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.groupBoxDadosBrinquedo.ResumeLayout(false);
+            this.groupBoxDadosBrinquedo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private GroupBox groupBox1;
+        private GroupBox groupBoxBrinquedos;
         private DataGridView dataGridViewBrinquedos;
-        private GroupBox groupBox2;
+        private GroupBox groupBoxDadosBrinquedo;
         private Button buttonSalvar;
         private Button buttonExcluir;
         private Button buttonEditar;
         private Button buttonNovo;
-        private TextBox textBox2;
+        private TextBox textBoxQuantidade;
         private Label labelQuantidade;
-        private TextBox textBox1;
+        private TextBox textBoxNome;
         private Label labelNome;
         private TextBox textBoxID;
         private Label labelID;

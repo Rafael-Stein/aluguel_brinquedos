@@ -30,8 +30,8 @@
         {
             this.menuBar = new System.Windows.Forms.MenuStrip();
             this.menuItemCadastros = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemCadastrosBrinquedos = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuItemCadastrosClientes = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemCadastrosBrinquedo = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemCadastrosCliente = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemCadastrosItensContrato = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemContratos = new System.Windows.Forms.ToolStripMenuItem();
             this.menuItemReceita = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,8 +58,8 @@
             // menuItemCadastros
             // 
             this.menuItemCadastros.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuItemCadastrosBrinquedos,
-            this.menuItemCadastrosClientes,
+            this.menuItemCadastrosBrinquedo,
+            this.menuItemCadastrosCliente,
             this.menuItemCadastrosItensContrato});
             this.menuItemCadastros.Name = "menuItemCadastros";
             this.menuItemCadastros.Padding = new System.Windows.Forms.Padding(5);
@@ -67,20 +67,21 @@
             this.menuItemCadastros.Text = "Cadastros";
             this.menuItemCadastros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // menuItemCadastrosBrinquedos
+            // menuItemCadastrosBrinquedo
             // 
-            this.menuItemCadastrosBrinquedos.Name = "menuItemCadastrosBrinquedos";
-            this.menuItemCadastrosBrinquedos.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosBrinquedos.Size = new System.Drawing.Size(190, 25);
-            this.menuItemCadastrosBrinquedos.Text = "Brinquedos";
-            this.menuItemCadastrosBrinquedos.Click += new System.EventHandler(this.menuItemCadastrosBrinquedos_Click);
+            this.menuItemCadastrosBrinquedo.Name = "menuItemCadastrosBrinquedo";
+            this.menuItemCadastrosBrinquedo.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
+            this.menuItemCadastrosBrinquedo.Size = new System.Drawing.Size(190, 25);
+            this.menuItemCadastrosBrinquedo.Text = "Brinquedo";
+            this.menuItemCadastrosBrinquedo.Click += new System.EventHandler(this.menuItemCadastrosBrinquedo_Click);
             // 
-            // menuItemCadastrosClientes
+            // menuItemCadastrosCliente
             // 
-            this.menuItemCadastrosClientes.Name = "menuItemCadastrosClientes";
-            this.menuItemCadastrosClientes.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosClientes.Size = new System.Drawing.Size(190, 25);
-            this.menuItemCadastrosClientes.Text = "Clientes";
+            this.menuItemCadastrosCliente.Name = "menuItemCadastrosCliente";
+            this.menuItemCadastrosCliente.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
+            this.menuItemCadastrosCliente.Size = new System.Drawing.Size(190, 25);
+            this.menuItemCadastrosCliente.Text = "Cliente";
+            this.menuItemCadastrosCliente.Click += new System.EventHandler(this.menuItemCadastrosCliente_Click);
             // 
             // menuItemCadastrosItensContrato
             // 
@@ -129,8 +130,8 @@
 
         private MenuStrip menuBar;
         private ToolStripMenuItem menuItemCadastros;
-        private ToolStripMenuItem menuItemCadastrosBrinquedos;
-        private ToolStripMenuItem menuItemCadastrosClientes;
+        private ToolStripMenuItem menuItemCadastrosBrinquedo;
+        private ToolStripMenuItem menuItemCadastrosCliente;
         private ToolStripMenuItem menuItemCadastrosItensContrato;
         private ToolStripMenuItem menuItemContratos;
         private ToolStripMenuItem menuItemReceita;
