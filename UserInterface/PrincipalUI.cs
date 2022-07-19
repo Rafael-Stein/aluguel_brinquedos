@@ -5,7 +5,7 @@ namespace aluguel_brinquedos.UserInterface
     public partial class PrincipalUI : Form
     {
         
-        //Atrb
+        //Atributos
         private BrinquedoUI brinquedoUI;
         private ClienteUI clienteUI;
 
@@ -16,6 +16,8 @@ namespace aluguel_brinquedos.UserInterface
 
         private void menuItemCadastrosBrinquedo_Click(object sender, EventArgs e)
         {
+
+            //Verificar se já existe uma instância da User Interface para não gerar multiplas telas
             if(this.brinquedoUI == null)
             {
                 this.brinquedoUI = new BrinquedoUI();
@@ -32,6 +34,8 @@ namespace aluguel_brinquedos.UserInterface
 
         private void menuItemCadastrosCliente_Click(object sender, EventArgs e)
         {
+
+            //Verificar se já existe uma instância da User Interface para não gerar multiplas telas
             if (this.clienteUI == null)
             {
                 this.clienteUI = new ClienteUI();

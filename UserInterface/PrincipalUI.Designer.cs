@@ -71,7 +71,7 @@
             // 
             this.menuItemCadastrosBrinquedo.Name = "menuItemCadastrosBrinquedo";
             this.menuItemCadastrosBrinquedo.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosBrinquedo.Size = new System.Drawing.Size(190, 25);
+            this.menuItemCadastrosBrinquedo.Size = new System.Drawing.Size(183, 25);
             this.menuItemCadastrosBrinquedo.Text = "Brinquedo";
             this.menuItemCadastrosBrinquedo.Click += new System.EventHandler(this.menuItemCadastrosBrinquedo_Click);
             // 
@@ -79,7 +79,7 @@
             // 
             this.menuItemCadastrosCliente.Name = "menuItemCadastrosCliente";
             this.menuItemCadastrosCliente.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosCliente.Size = new System.Drawing.Size(190, 25);
+            this.menuItemCadastrosCliente.Size = new System.Drawing.Size(183, 25);
             this.menuItemCadastrosCliente.Text = "Cliente";
             this.menuItemCadastrosCliente.Click += new System.EventHandler(this.menuItemCadastrosCliente_Click);
             // 
@@ -87,8 +87,8 @@
             // 
             this.menuItemCadastrosItensContrato.Name = "menuItemCadastrosItensContrato";
             this.menuItemCadastrosItensContrato.Padding = new System.Windows.Forms.Padding(5, 0, 5, 5);
-            this.menuItemCadastrosItensContrato.Size = new System.Drawing.Size(190, 25);
-            this.menuItemCadastrosItensContrato.Text = "Itens do Contrato";
+            this.menuItemCadastrosItensContrato.Size = new System.Drawing.Size(180, 25);
+            this.menuItemCadastrosItensContrato.Text = "Item do Contrato";
             // 
             // menuItemContratos
             // 
@@ -131,9 +131,9 @@
         private MenuStrip menuBar;
         private ToolStripMenuItem menuItemCadastros;
         private ToolStripMenuItem menuItemCadastrosBrinquedo;
-        private ToolStripMenuItem menuItemCadastrosCliente;
-        private ToolStripMenuItem menuItemCadastrosItensContrato;
         private ToolStripMenuItem menuItemContratos;
         private ToolStripMenuItem menuItemReceita;
+        private ToolStripMenuItem menuItemCadastrosCliente;
+        private ToolStripMenuItem menuItemCadastrosItensContrato;
     }
 }

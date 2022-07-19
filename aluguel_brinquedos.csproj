@@ -9,4 +9,10 @@
     <StartupObject>aluguel_brinquedos.Program</StartupObject>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Update="UserInterface\ItemContratoUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+
 </Project>
